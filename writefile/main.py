@@ -14,7 +14,8 @@ def main(args=sys.argv[1:]):
     Write stdin to a given path, creating directories as necessary.
     """
     opts = parse_args(args)
-    ensure_dir_exists(os.path.basename(opts.PATH))
+    ensure_dir_exists(os.path.dirname(opts.PATH))
+
     with file(opts.PATH, 'w') as f:
         buf = sys.stdin.read(BUFSIZE)
         while buf:
