@@ -8,7 +8,7 @@ PACKAGE = 'writefile'
 setup(
     name=PACKAGE,
     description='Write stdin to a given path, creating directories as necessary.',
-    version='0.1',
+    version='0.2.dev0',
     author='Nathan Wilcox',
     author_email='nejucomo@gmail.com',
     license='GPLv3',
